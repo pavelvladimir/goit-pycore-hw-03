@@ -17,14 +17,16 @@ goit-pycore-hw-03/
 ├── goit_pycore_hw_03/
 │   ├── __init__.py
 │   ├── task_01.py
-│   └── task_02.py
+│   ├── task_02.py
+│   └── task_03.py
 ├── sphinx/
 │   ├── conf.py
 │   ├── index.rst
 │   └── api.rst
 ├── tests/
 │   ├── test_task_01.py
-│   └── test_task_02.py
+│   ├── test_task_02.py
+│   └── test_task_03.py
 └── website/
     ├── docs/
     ├── src/
@@ -54,6 +56,17 @@ It:
 - returns a sorted list of unique random numbers
 - returns an empty list for invalid input values
 
+## Task 3
+
+The module [goit_pycore_hw_03/task_03.py](goit_pycore_hw_03/task_03.py) contains the `normalize_phone(phone_number)` function.
+
+It:
+
+- removes formatting characters such as spaces, brackets, and hyphens
+- keeps only digits and a leading `+`
+- adds the Ukrainian country code `+38` when it is missing
+- returns a normalized phone number string
+
 ## Run
 
 The entry point in [main.py](main.py) lets you choose a task and then asks for the required input values.
@@ -76,6 +89,13 @@ Example flow for Task 2:
 1
 49
 6
+```
+
+Example flow for Task 3:
+
+```text
+3
+    +38(050)123-32-34
 ```
 
 ## Tests
