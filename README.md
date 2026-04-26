@@ -16,13 +16,15 @@ goit-pycore-hw-03/
 ├── uv.lock
 ├── goit_pycore_hw_03/
 │   ├── __init__.py
-│   └── task_01.py
+│   ├── task_01.py
+│   └── task_02.py
 ├── sphinx/
 │   ├── conf.py
 │   ├── index.rst
 │   └── api.rst
 ├── tests/
-│   └── test_task_01.py
+│   ├── test_task_01.py
+│   └── test_task_02.py
 └── website/
     ├── docs/
     ├── src/
@@ -42,18 +44,38 @@ It:
 - returns a negative number when the given date is in the future
 - raises `ValueError` for an invalid date format
 
+## Task 2
+
+The module [goit_pycore_hw_03/task_02.py](goit_pycore_hw_03/task_02.py) contains the `get_numbers_ticket(min, max, quantity)` function.
+
+It:
+
+- validates the allowed lottery range constraints
+- returns a sorted list of unique random numbers
+- returns an empty list for invalid input values
+
 ## Run
 
-The entry point in [main.py](main.py) asks for a date and prints the difference in days.
+The entry point in [main.py](main.py) lets you choose a task and then asks for the required input values.
 
 ```bash
 uv run python main.py
 ```
 
-Example input:
+Example flow for Task 1:
 
 ```text
+1
 2021-10-09
+```
+
+Example flow for Task 2:
+
+```text
+2
+1
+49
+6
 ```
 
 ## Tests
