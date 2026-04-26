@@ -1,0 +1,18 @@
+API Reference
+=============
+
+Package exports
+---------------
+
+.. automodule:: goit_pycore_hw_03
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Task 01
+-------
+
+.. automodule:: goit_pycore_hw_03.task_01
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,18 @@
+:root {
+  --ifm-color-primary: #9c5b16;
+  --ifm-color-primary-dark: #8f5314;
+  --ifm-color-primary-darker: #874e13;
+  --ifm-color-primary-darkest: #70400f;
+  --ifm-color-primary-light: #a96318;
+  --ifm-color-primary-lighter: #b16819;
+  --ifm-color-primary-lightest: #c7771c;
+  --ifm-background-color: #fffdf9;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Avenir Next", "Segoe UI", sans-serif;
+  --ifm-heading-font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 251, 244, 0.88);
+}
