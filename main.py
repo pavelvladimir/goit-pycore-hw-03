@@ -1,4 +1,9 @@
-from goit_pycore_hw_03 import get_days_from_today, get_numbers_ticket, normalize_phone
+from goit_pycore_hw_03 import (
+    get_days_from_today,
+    get_numbers_ticket,
+    get_upcoming_birthdays,
+    normalize_phone,
+)
 
 
 def run_task_01() -> None:
@@ -46,11 +51,42 @@ def run_task_03() -> None:
     print(f"Normalized phone number: {normalized_phone}")
 
 
+def run_task_04() -> None:
+    try:
+        user_count = int(input("Enter number of users: ").strip())
+    except ValueError:
+        print("Invalid input: number of users must be an integer.")
+        return
+
+    if user_count < 0:
+        print("Invalid input: number of users cannot be negative.")
+        return
+
+    users: list[dict[str, str]] = []
+    for index in range(1, user_count + 1):
+        name = input(f"Enter name for user {index}: ").strip()
+        birthday = input(f"Enter birthday for user {index} (YYYY.MM.DD): ").strip()
+        users.append({"name": name, "birthday": birthday})
+
+    try:
+        upcoming_birthdays = get_upcoming_birthdays(users)
+    except (TypeError, ValueError) as error:
+        print(f"Invalid input: {error}")
+        return
+
+    if not upcoming_birthdays:
+        print("No upcoming birthdays in the next 7 days.")
+        return
+
+    print(f"Upcoming birthdays: {upcoming_birthdays}")
+
+
 def main() -> None:
     print("Choose a task:")
     print("1 - Days from today")
     print("2 - Lottery ticket numbers")
     print("3 - Normalize phone number")
+    print("4 - Upcoming birthdays")
     choice = input("Enter task number: ").strip()
 
     if choice == "1":
@@ -62,8 +98,11 @@ def main() -> None:
     if choice == "3":
         run_task_03()
         return
+    if choice == "4":
+        run_task_04()
+        return
 
-    print("Invalid choice. Please enter 1, 2, or 3.")
+    print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
 
 if __name__ == "__main__":

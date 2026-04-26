@@ -58,10 +58,6 @@ const config = {
               to: "/docs/intro",
             },
             {
-              label: "Task 1",
-              to: "/docs/tasks/task-01",
-            },
-            {
               label: "Python API",
               to: "/python-api",
             },

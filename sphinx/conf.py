@@ -21,6 +21,10 @@ exclude_patterns = ["_build"]
 
 autodoc_member_order = "bysource"
 autodoc_typehints = "description"
+pygments_style = "sphinx"
+pygments_dark_style = "monokai"
 
 html_theme = "alabaster"
-html_static_path: list[str] = []
+html_static_path = ["_static"]
+html_css_files = ["api-theme.css"]
+html_js_files = ["theme.js"]

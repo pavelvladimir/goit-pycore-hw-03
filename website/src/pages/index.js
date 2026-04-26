@@ -19,6 +19,21 @@ const cards = [
     text: "Documentation for the first homework module and its date-difference function.",
     href: "/docs/tasks/task-01",
   },
+  {
+    title: "Task 2",
+    text: "Lottery ticket number generation with uniqueness, sorting, and input validation.",
+    href: "/docs/tasks/task-02",
+  },
+  {
+    title: "Task 3",
+    text: "Phone number normalization for SMS-friendly output with a consistent +38 prefix.",
+    href: "/docs/tasks/task-03",
+  },
+  {
+    title: "Task 4",
+    text: "Upcoming birthday reminders with weekend shifting and a seven-day lookahead.",
+    href: "/docs/tasks/task-04",
+  },
 ];
 
 function Card({ title, text, href }) {

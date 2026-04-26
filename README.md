@@ -18,7 +18,8 @@ goit-pycore-hw-03/
 │   ├── __init__.py
 │   ├── task_01.py
 │   ├── task_02.py
-│   └── task_03.py
+│   ├── task_03.py
+│   └── task_04.py
 ├── sphinx/
 │   ├── conf.py
 │   ├── index.rst
@@ -26,7 +27,8 @@ goit-pycore-hw-03/
 ├── tests/
 │   ├── test_task_01.py
 │   ├── test_task_02.py
-│   └── test_task_03.py
+│   ├── test_task_03.py
+│   └── test_task_04.py
 └── website/
     ├── docs/
     ├── src/
@@ -67,6 +69,17 @@ It:
 - adds the Ukrainian country code `+38` when it is missing
 - returns a normalized phone number string
 
+## Task 4
+
+The module [goit_pycore_hw_03/task_04.py](goit_pycore_hw_03/task_04.py) contains the `get_upcoming_birthdays(users)` function.
+
+It:
+
+- finds birthdays within the next 7 days including today
+- shifts weekend congratulations to the following Monday
+- returns `name` and `congratulation_date` values in `YYYY.MM.DD` format
+- handles birthday windows that cross into the next year
+
 ## Run
 
 The entry point in [main.py](main.py) lets you choose a task and then asks for the required input values.
@@ -96,6 +109,17 @@ Example flow for Task 3:
 ```text
 3
     +38(050)123-32-34
+```
+
+Example flow for Task 4:
+
+```text
+4
+2
+John Doe
+1985.01.23
+Jane Smith
+1990.01.27
 ```
 
 ## Tests
